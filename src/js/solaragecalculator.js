@@ -20,7 +20,19 @@ getYearsPassedSincePastBirthday(pastBirthdayAge) {
     jupiterYears: jupiterYearsPassed
   };
 }
-getYearsToFutureBirthday(){
+getYearsToFutureBirthday(futureBirthdayAge) {
+  const earthYearsToFutureBirthday = futureBirthdayAge - this.earthAge;
+  const mercuryYearsToFutureBirthday = earthYearsToFutureBirthday * 0.24;
+  const venusYearsToFutureBirthday = earthYearsToFutureBirthday * 0.62;
+  const marsYearsToFutureBirthday = earthYearsToFutureBirthday * 1.88;
+  const jupiterYearsToFutureBirthday = earthYearsToFutureBirthday * 11.86;
+  return {
+      earthYears: earthYearsToFutureBirthday,
+      mercuryYears: mercuryYearsToFutureBirthday,
+      venusYears: venusYearsToFutureBirthday,
+      marsYears: marsYearsToFutureBirthday,
+      jupiterYears: jupiterYearsToFutureBirthday
 
-}
-} 
+    }
+  } 
+};

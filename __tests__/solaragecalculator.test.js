@@ -23,8 +23,8 @@ describe("SolarAgeCalculator", () => {
         const ageCalculator2 = new SolarAgeCalculator(25);
         const yearsUntil = ageCalculator2.getYearsToFutureBirthday(36);
         expect(yearsUntil.earthYears).toEqual(11);
-        expect(yearsUntil.mercuryYears).toEqual(11);
-        expect(yearsUntil.venusYears).toEqual(11 );
+        expect(yearsUntil.mercuryYears).toEqual(11 * 0.24);
+        expect(yearsUntil.venusYears).toEqual(11 * 0.62);
         expect(yearsUntil.marsYears).toEqual(11 * 1.88);
         expect(yearsUntil.jupiterYears).toEqual(11 * 11.86);
     })
