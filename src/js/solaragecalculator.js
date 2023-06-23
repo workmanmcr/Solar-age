@@ -20,4 +20,7 @@ getYearsPassedSincePastBirthday(pastBirthdayAge) {
     jupiterYears: jupiterYearsPassed
   };
 }
+getYearsToFutureBirthday(){
+
 }
+} 

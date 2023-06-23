@@ -18,6 +18,15 @@ describe("SolarAgeCalculator", () => {
         expect(yearsPassed.venusYears).toEqual(13 * 0.62);
         expect(yearsPassed.marsYears).toEqual(13 * 1.88);
         expect(yearsPassed.jupiterYears).toEqual(13 * 11.86);
-      });
+      })
+    test("sould calculate and  return the years until future birthdays", () => {
+        const ageCalculator2 = new SolarAgeCalculator(25);
+        const yearsUntil = ageCalculator2.getYearsToFutureBirthday(36);
+        expect(yearsUntil.earthYears).toEqual(11);
+        expect(yearsUntil.mercuryYears).toEqual(11);
+        expect(yearsUntil.venusYears).toEqual(11 );
+        expect(yearsUntil.marsYears).toEqual(11 * 1.88);
+        expect(yearsUntil.jupiterYears).toEqual(11 * 11.86);
+    })
     });
   
