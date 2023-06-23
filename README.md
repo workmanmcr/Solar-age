@@ -4,7 +4,7 @@ By: Mike Workman
 
 Template repo for Node.js project with Webpack, ESLint, Babel, and Jest.
 
-View on [Github Pages](https://username.github.io/repo-name/)
+View on [Github Pages](https://https://workmanmcr.github.io/solar-age/)
 
 ## **Technologies Used**
 
