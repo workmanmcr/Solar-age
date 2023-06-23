@@ -20,7 +20,7 @@ module.exports = {
             verbose: true // optional
         }),
         new HtmlWebpackPlugin({
-            title: 'node',
+            title: 'solarage',
             template: './src/index.html',
             inject: 'body'
         })
