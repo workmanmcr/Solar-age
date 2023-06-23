@@ -1,3 +1,5 @@
 export default function SolarAgeCalculator() {
-  constructor(); {}
+  constructor(); {
+    this.earthAge = 0;
+  }
 };
