@@ -6,5 +6,7 @@ export default class SolarAgeCalculator {
     this.marsAge = marsAge;
     this.jupiterAge = jupiterAge;
   }
-
+  getEarthAge() {
+    
+  }
 }
