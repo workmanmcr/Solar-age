@@ -11,3 +11,15 @@ describe("SolarAgeCalculator", () => {
         expect(solarAgeCalculator.jupiterAge).toBe(11.86); 
     })
 });
+describe('#getYearsPassedSincePastBirthday()', () => {
+    test('should return the years passed on each planet since a past birthday', () => {
+      const ageCalculator = new SolarAgeCalculator(56);
+      const yearsPassed = ageCalculator.getYearsPassedSincePastBirthday(43);
+      expect(ageCalculator.earthYears).toBe(13);
+        expect(ageCalculator.mercuryYears).toBe(0);
+        expect(ageCalculator.venusYears).toBe(0);
+        expect(ageCalculator.marsYears).toBe(0);
+        expect(ageCalculator.jupiterYears).toBe(0); 
+      });
+    });
+  
